@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Openroot GDrive Automation System",
+  "version": "10.1.1",
+  "short_name": "File Renamer",
+  "description": "Intelligently rename Google Drive media files. Built by Openroot Systems.",
+  "author": "Openroot Systems <hello@openrootsystems.com>",
+  
+  "permissions": [
+    "activeTab",
+    "identity"
+  ],
+
+  "host_permissions": [
+    "https://www.googleapis.com/*",
+    "https://drive.google.com/*"
+  ],
+
+  "oauth2": {
+    "client_id": "889049138081-c7spdn0hdvh4f49cfilq0v21do0otei6.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive"
+    ]
+  },
+
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GDrive Automation",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}

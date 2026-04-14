@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Openroot GDrive Automation System</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 260px;
+      min-height: 120px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Brand header ── */
+    .header {
+      background: #0f1f3d;          /* OpenRoot navy */
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .logo {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand-name {
+      font-size: 11px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .product-name {
+      font-size: 10px;
+      color: #7a9cc4;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Body ── */
+    .body {
+      flex: 1;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    #status {
+      font-size: 13px;
+      color: #333;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    #status.error   { color: #c0392b; }
+    #status.success { color: #1a7a4a; }
+
+    /* ── Spinner ── */
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #e0e0e0;
+      border-top-color: #0f1f3d;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+
+    .spinner.active { display: block; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 1px solid #f0f0f0;
+      padding: 6px 14px;
+      text-align: right;
+    }
+
+    .footer a {
+      font-size: 9px;
+      color: #aaa;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .footer a:hover { color: #0f1f3d; }
+  </style>
+</head>
+<body>
+
+  <!-- Brand header -->
+  <div class="header">
+    <img src="icon.png" class="logo" />
+    <div class="brand-text">
+      <span class="brand-name">Openroot Systems</span>
+      <span class="product-name">GDrive Automation System</span>
+    </div>
+  </div>
+
+  <!-- Status area -->
+  <div class="body">
+    <div class="spinner" id="spinner"></div>
+    <div id="status">Starting...</div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <a href="https://openroot.in" target="_blank">openroot.in</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -147,13 +147,4 @@ Format:
 ## Author
 
 **Openroot Systems**  
-Drive Smart Renamer
-
-
----
-
-## Final Note
-
-This is not just a script — it is a scalable automation system designed for real-world usage.
-
-Built with performance, safety, and intelligence.
+Openroot GDrive Automation System

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Openroot GDrive Automation System",
-  "version": "10.1.1",
+  "version": "10.1.2",
   "short_name": "File Renamer",
   "description": "Intelligently rename Google Drive media files. Built by Openroot Systems.",
   "author": "Openroot Systems <hello@openrootsystems.com>",
